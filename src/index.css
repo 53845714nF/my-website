@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom 3D/Depth Utilities & Components */
+@layer utilities {
+  .tilt {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+
+  .tilt-hover:hover {
+    transform: perspective(1000px) translateY(-0.25rem) rotateX(2deg) rotateY(-3deg) scale(1.02);
+  }
+}
+
+@layer components {
+  .pop {
+    @apply transform-gpu transition-transform duration-300 ease-out will-change-transform hover:-translate-y-1 hover:scale-105;
+  }
+
+  .card-3d {
+    @apply rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md hover:shadow-2xl;
+  }
+
+  .btn-3d {
+    @apply inline-flex items-center justify-center rounded-lg shadow-md hover:shadow-xl transition-all duration-300 active:translate-y-px;
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" sizes="64x64" href="/me.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="c7T3Vp-FF-V3OyUOr6Gd3-YKd2XOqFRmIHnTri26bFI" />
+    <title>Sebastian Feustel</title>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var shouldUseDark = theme === 'dark' || (!theme && prefersDark);
+          document.documentElement.classList.toggle('dark', shouldUseDark);
+        } catch (e) { /* noop */ }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
