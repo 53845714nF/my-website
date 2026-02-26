@@ -57,7 +57,7 @@ export default function About() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/sebastian-feustel-842a1a1ab/"
+                href="https://www.linkedin.com/in/sebastian-feustel"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
