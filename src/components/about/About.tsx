@@ -70,7 +70,7 @@ export default function About() {
               </a>
 
               <a
-                href="mailto:portfolio.cake053@passinbox.com"
+                href="mailto:sebastian@hackwiki.de"
                 aria-label="E-Mail"
                 className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors btn-3d pop"
               >

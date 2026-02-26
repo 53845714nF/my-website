@@ -18,7 +18,7 @@ const Hero = () => {
           View Projects →
         </a>
 
-        <a href="mailto:portfolio.cake053@passinbox.com" className="border border-gray-400 dark:border-gray-600 px-4 py-2 btn-3d pop hover:bg-gray-100 dark:hover:bg-gray-700">
+        <a href="mailto:sebastian@hackwiki.de" className="border border-gray-400 dark:border-gray-600 px-4 py-2 btn-3d pop hover:bg-gray-100 dark:hover:bg-gray-700">
           Get In Touch ✉️
         </a>
       </div>
