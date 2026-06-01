@@ -13,8 +13,8 @@ const projectList = [
     imageUrl: "projects/img/dinofind.webp",
     title: "Dinofind",
     description: "🦕 Dinofind is a Website for finding visually similar images.",
-    technologies: ["Flask", "Dinov2", "Minio", "Qdrant-vector-database", "Tailwindcss"],
-    githubUrl: "https://github.com/53845714nF/dinofind",
+    technologies: ["Golang", "Dinov2", "ONNX", "Qdrant-vector-database", "React"],
+    githubUrl: "https://github.com/53845714nF/dinofind2",
     websiteUrl: "https://www.dinofind.com/"
   },
   {
@@ -22,7 +22,7 @@ const projectList = [
     imageUrl: "projects/img/malwareuniverse.webp",
     title: "Malwareuniverse",
     description: "📊 Analysis and visualization of malware vector embeddings using advanced dimension reduction techniques, displayed in 2D or 3D space.",
-    technologies: ["FastAPI", "Python", "Nextjs"],
+    technologies: ["FastAPI", "Python", "React"],
     githubUrl: "https://github.com/malwareuniverse",
     websiteUrl: "https://www.malwareuniverse.org/"
   },
