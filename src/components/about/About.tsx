@@ -1,5 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaStackOverflow } from "react-icons/fa";
-import { SiHackthebox } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -35,27 +34,10 @@ export default function About() {
                 My work spans system architecture, networking, CI/CD pipelines and secure platform operation.
                 I have a strong open-source affinity and prefer hands-on engineering over abstraction for its own sake.
               </p>
-              <p>
-                I’m particularly interested in attack and defense mechanisms, understanding systems by breaking and securing them,
-                and continuously improving robustness through practical experience.
-              </p>
             </div>
 
             {/* Icons links */}
             <div className="mt-8 flex items-center gap-4">
-              <a
-                href="https://github.com/53845714nF"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors btn-3d pop"
-              >
-                <FaGithub
-                  size={22}
-                  className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                />
-              </a>
-
               <a
                 href="https://www.linkedin.com/in/sebastian-feustel"
                 target="_blank"
@@ -79,28 +61,14 @@ export default function About() {
                   className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
                 />
               </a>
-
               <a
-                href="https://stackoverflow.com/users/19719003/53845714nf"
+                href="https://github.com/53845714nF"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Stackoverflow."
+                aria-label="GitHub"
                 className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors btn-3d pop"
               >
-                <FaStackOverflow
-                  size={22}
-                  className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                />
-              </a>
-
-              <a
-                href="https://app.hackthebox.com/public/users/1563285"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Hackthebox"
-                className="group inline-flex items-center justify-center w-12 h-12 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors btn-3d pop"
-              >
-                <SiHackthebox
+                <FaGithub
                   size={22}
                   className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
                 />
