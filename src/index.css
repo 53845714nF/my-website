@@ -5,6 +5,47 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hero word rotation */
+@keyframes word-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word-in {
+  display: inline-block;
+  animation: word-in 0.35s ease-out both;
+}
+
+/* Keep section headings visible below the fixed navbar when jumping to anchors */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .pop:hover,
+  .tilt-hover:hover {
+    transform: none !important;
+  }
+}
+
 /* Custom 3D/Depth Utilities & Components */
 @layer utilities {
   .tilt {
@@ -23,7 +64,7 @@ html {
   }
 
   .card-3d {
-    @apply rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md hover:shadow-2xl;
+    @apply rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-md hover:shadow-2xl transition-shadow duration-300;
   }
 
   .btn-3d {
